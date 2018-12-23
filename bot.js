@@ -3,6 +3,11 @@ const client = new Discord.Client();
 const prefix = "H";  
 
 
+
+client.on('ready',=> {
+	
+	client.user.setGame("كسمي لبوه", "https://www.twitch.roka")
+});
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
@@ -15,7 +20,9 @@ if (message.content.startsWith(prefix + 'setgame')) {
 } 
 
 if (message.content.startsWith(prefix + 'setstream')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/v5bz");
+  client.user.setGame(argresult, "https://www;
+	 console.log('test' + argresult);
+    message.channel.twitch.tv/v5bz");
 	 console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 } 
