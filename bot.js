@@ -7,7 +7,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "432905042878791684") return;
+  if (message.author.id !== "505854702458503168") return;
 
 if (message.content.startsWith(prefix + 'setgame')) {
   client.user.setGame(argresult);
